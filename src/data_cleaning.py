@@ -56,7 +56,8 @@ if df is not None:
     print("INITIAL DATA OVERVIEW")
     print("="*70)
     print(df.head())
-    print("\n" + df.info())
+    print()
+    df.info()
 
 # ============================================================================
 # SECTION 3: DATA CLEANING PIPELINE
@@ -79,9 +80,27 @@ def clean_condominium_data(df):
         'Completion Year', '# of Floors', 'Total Units', 'Parking Lot'
     ]
     
-    # Convert to numeric
+    # Special handling for price column (remove RM, spaces, commas)
+    if 'price' in df_clean.columns:
+        df_clean['price'] = df_clean['price'].astype(str).str.replace('RM', '', regex=False)
+        df_clean['price'] = df_clean['price'].str.replace(',', '', regex=False)
+        df_clean['price'] = df_clean['price'].str.replace(' ', '', regex=False)
+        df_clean['price'] = pd.to_numeric(df_clean['price'], errors='coerce')
+        print(f"  ✓ price: cleaned and converted to numeric")
+    
+    # Special handling for Property Size (remove sq.ft., sqft, etc.)
+    if 'Property Size' in df_clean.columns:
+        df_clean['Property Size'] = df_clean['Property Size'].astype(str).str.replace('sq.ft.', '', regex=False)
+        df_clean['Property Size'] = df_clean['Property Size'].str.replace('sqft', '', regex=False)
+        df_clean['Property Size'] = df_clean['Property Size'].str.replace('sq ft', '', regex=False)
+        df_clean['Property Size'] = df_clean['Property Size'].str.replace(',', '', regex=False)
+        df_clean['Property Size'] = df_clean['Property Size'].str.replace(' ', '', regex=False)
+        df_clean['Property Size'] = pd.to_numeric(df_clean['Property Size'], errors='coerce')
+        print(f"  ✓ Property Size: cleaned and converted to numeric")
+    
+    # Convert other numeric columns
     for col in numeric_cols:
-        if col in df_clean.columns:
+        if col in df_clean.columns and col not in ['price', 'Property Size']:
             df_clean[col] = pd.to_numeric(df_clean[col], errors='coerce')
             print(f"  ✓ {col}: converted to numeric")
     
