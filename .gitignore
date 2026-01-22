@@ -1,0 +1,29 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# Data files (optional)
+# data/raw/*.csv
+# data/processed/*.csv
+
+# Models
+models/*.pkl
+models/*.joblib
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
