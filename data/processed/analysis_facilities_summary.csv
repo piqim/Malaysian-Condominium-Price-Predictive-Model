@@ -1,0 +1,2 @@
+Analysis,Correlation,Strength,Interpretation,Avg_Price_Increase_Per_Facility,ML_Recommendation
+Facilities vs Price Correlation,0.17788383847669842,Weak,MORE facilities → HIGHER price (weak),8802.242462665541,Moderate feature - consider including

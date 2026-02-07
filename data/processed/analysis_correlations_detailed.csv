@@ -1,0 +1,8 @@
+Feature,Correlation,Abs_Correlation,Direction,Strength,Interpretation,ML_Importance,R_Squared,Variance_Explained_Pct
+Property Size,0.6219538628983978,0.6219538628983978,Positive,Strong,Strong positive relationship with price,High - Important predictor,0.38682660757423903,38.6826607574239
+Bathroom,0.5799262952007029,0.5799262952007029,Positive,Strong,Strong positive relationship with price,High - Important predictor,0.33631450786521283,33.631450786521285
+Parking Lot,0.3943149745252529,0.3943149745252529,Positive,Moderate,Moderate positive relationship with price,Medium - Useful predictor,0.15548429913485082,15.548429913485082
+Bedroom,0.35781940889009517,0.35781940889009517,Positive,Moderate,Moderate positive relationship with price,Medium - Useful predictor,0.1280347293784571,12.803472937845711
+Completion Year,0.21634625045779424,0.21634625045779424,Positive,Weak,Weak positive relationship with price,Low - Minor predictor,0.046805700087146636,4.680570008714664
+Total Units,-0.11175068282009573,0.11175068282009573,Negative,Weak,Weak negative relationship with price,Low - Minor predictor,0.01248821511075764,1.248821511075764
+# of Floors,0.04814986139757131,0.04814986139757131,Positive,Very Weak/None,Very Weak/None positive relationship with price,Negligible - Consider removing,0.002318409152605328,0.2318409152605328

@@ -1,0 +1,30 @@
+Feature_Name,Feature_Type,Data_Type,Missing_Count,Missing_Pct,Unique_Values,Mean,Median,Std,Min,Max,Skewness,Correlation_with_Price,Recommended_for_ML,Preprocessing_Needed,Notes
+price,Target,Continuous,0,0.0,390,504482.39312784234,418000.0,339915.93956712727,48000.0,4000000.0,3.89012481347128,1.0,Maybe,Yes - transform,Skewed distribution
+Property Size,Numerical,Continuous,0,0.0,602,1068.4906518443659,987.0,541.83653851293,9.0,14500.0,9.874745172602607,0.6219538628983978,Yes,Yes - transform,Skewed distribution
+Bathroom,Numerical,Continuous,0,0.0,7,2.108135421930268,2.0,0.5944038910506212,1.0,7.0,2.247753657723201,0.579926295200703,Yes,Yes - transform,Skewed distribution
+Parking Lot,Numerical,Continuous,0,0.0,6,1.678120262758969,2.0,0.611634174723187,1.0,6.0,0.9146377777192558,0.3943149745252529,Yes,No,Normal distribution
+Bedroom,Numerical,Continuous,0,0.0,8,2.9636179888832745,3.0,0.7283721809442659,1.0,10.0,0.6451705621664294,0.3578194088900951,Yes,No,Normal distribution
+Completion Year,Numerical,Continuous,0,0.0,40,2011.3835270338554,2014.0,8.001576657744348,1985.0,2026.0,-0.752925305710898,0.21634625045779463,Yes,No,Normal distribution
+num_facilities,Numerical,Continuous,0,0.0,14,7.494694290045477,8.0,3.5121264929598985,1.0,14.0,-0.14191122121235972,0.17788383847669842,Yes,No,Normal distribution
+# of Floors,Numerical,Continuous,0,0.0,60,24.754926730672057,22.0,26.41850451714354,2.0,504.0,14.390833301643191,0.04814986139757132,Maybe,Yes - transform,Skewed distribution
+Total Units,Numerical,Continuous,0,0.0,436,622.0818595250126,480.0,515.1934211954303,1.0,4225.0,3.0055605598903736,-0.11175068282009573,Yes,Yes - transform,Skewed distribution
+Nearby School,Numerical,Continuous,0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,,Maybe,No,Normal distribution
+Mall,Numerical,Continuous,0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,,Maybe,No,Normal distribution
+Park,Numerical,Continuous,0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,,Maybe,No,Normal distribution
+Hospital,Numerical,Continuous,0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,,Maybe,No,Normal distribution
+Highway,Numerical,Continuous,0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,,Maybe,No,Normal distribution
+Nearby Railway Station,Numerical,Continuous,0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,,Maybe,No,Normal distribution
+Nearby Mall,Categorical,Nominal,1760,88.93380495199595,65,,,,,,,,Maybe - high cardinality,Yes - encode,65 categories - Label encode or target encode
+Category,Categorical,Nominal/Ordinal,0,0.0,1,,,,,,,,Yes,Yes - encode,1 categories - One-hot encode
+Facilities,Categorical,Nominal,0,0.0,1421,,,,,,,,Maybe - high cardinality,Yes - encode,1421 categories - Label encode or target encode
+Building Name,Categorical,Nominal,0,0.0,785,,,,,,,,Maybe - high cardinality,Yes - encode,785 categories - Label encode or target encode
+Developer,Categorical,Nominal,0,0.0,414,,,,,,,,Maybe - high cardinality,Yes - encode,414 categories - Label encode or target encode
+Tenure Type,Categorical,Nominal/Ordinal,0,0.0,2,,,,,,,,Yes,Yes - encode,2 categories - One-hot encode
+Address,Categorical,Nominal,0,0.0,752,,,,,,,,Maybe - high cardinality,Yes - encode,752 categories - Label encode or target encode
+Property Type,Categorical,Nominal/Ordinal,0,0.0,8,,,,,,,,Yes,Yes - encode,8 categories - One-hot encode
+Floor Range,Categorical,Nominal/Ordinal,0,0.0,4,,,,,,,,Yes,Yes - encode,4 categories - One-hot encode
+Land Title,Categorical,Nominal/Ordinal,0,0.0,3,,,,,,,,Yes,Yes - encode,3 categories - One-hot encode
+Firm Type,Categorical,Nominal/Ordinal,83,4.194037392622536,8,,,,,,,,Yes,Yes - encode,8 categories - One-hot encode
+Bus Stop,Categorical,Nominal,1577,79.68671045982819,175,,,,,,,,Maybe - high cardinality,Yes - encode,175 categories - Label encode or target encode
+School,Categorical,Nominal,1458,73.67357251136937,220,,,,,,,,Maybe - high cardinality,Yes - encode,220 categories - Label encode or target encode
+Railway Station,Categorical,Nominal,1689,85.34613441131886,89,,,,,,,,Maybe - high cardinality,Yes - encode,89 categories - Label encode or target encode

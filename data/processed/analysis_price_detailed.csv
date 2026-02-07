@@ -1,0 +1,12 @@
+Metric,Value,Interpretation
+Mean,504482.39312784234,Average condominium price in dataset
+Median,418000.0,Middle value - 50% of condos cost less than this
+Std Dev,339915.93956712727,Typical deviation from mean
+Min,48000.0,Cheapest condominium in dataset
+Max,4000000.0,Most expensive condominium in dataset
+Range,3952000.0,"Price range spans RM 3,952,000"
+Q1 (25%),320000.0,25% of condos cost less than this
+Q3 (75%),570000.0,75% of condos cost less than this
+IQR,250000.0,Middle 50% of prices fall within this range
+Skewness,3.89012481347128,Highly right-skewed (many luxury condos)
+Kurtosis,24.19746709300147,"Leptokurtic (heavy tails, more outliers)"

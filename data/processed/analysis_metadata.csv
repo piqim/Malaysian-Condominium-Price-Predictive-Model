@@ -1,0 +1,2 @@
+Analysis_Date,Total_Records,Total_Features,Numerical_Features,Categorical_Features,Target_Variable,Target_Mean,Target_Median,Target_Std,Features_High_Correlation,Features_Medium_Correlation,Features_Low_Correlation,Recommended_Features_Count
+2026-02-07 15:18:31.268757,1979,29,15,14,price,504482.39312784234,418000.0,339915.93956712727,2,2,2,13

@@ -1,0 +1,4 @@
+Amenity,With (Median),Without (Median),Difference (RM),Difference (%),Count With,Count Without
+Railway Station,405000.0,420000.0,-15000.0,-3.571428571428571,290,1689
+Bus Stop,400000.0,420000.0,-20000.0,-4.761904761904762,402,1577
+School,399000.0,420000.0,-21000.0,-5.0,521,1458

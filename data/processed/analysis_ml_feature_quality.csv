@@ -1,0 +1,9 @@
+Feature,Missing_Pct,Skewness,Quality_Assessment,ML_Recommendation,Transformation_Recommendation,Variance,Low_Variance_Flag
+Property Size,0.0,9.874745172602607,Good - Low missing values,Safe to use with median/mean imputation,Apply log/sqrt transformation to reduce skewness,293586.8344676739,No
+Bedroom,0.0,0.6451705621664294,Good - Low missing values,Safe to use with median/mean imputation,Consider transformation if model requires normality,0.5305260339735065,No
+Bathroom,0.0,2.247753657723201,Good - Low missing values,Safe to use with median/mean imputation,Apply log/sqrt transformation to reduce skewness,0.3533159856961187,No
+Completion Year,0.0,-0.752925305710898,Good - Low missing values,Safe to use with median/mean imputation,Consider transformation if model requires normality,64.02522900975922,No
+# of Floors,0.0,14.390833301643191,Good - Low missing values,Safe to use with median/mean imputation,Apply log/sqrt transformation to reduce skewness,697.9373809223335,No
+Total Units,0.0,3.0055605598903736,Good - Low missing values,Safe to use with median/mean imputation,Apply log/sqrt transformation to reduce skewness,265424.2612430521,No
+Parking Lot,0.0,0.9146377777192558,Good - Low missing values,Safe to use with median/mean imputation,Consider transformation if model requires normality,0.37409636368931404,No
+price,0.0,3.89012481347128,Good - Low missing values,Safe to use with median/mean imputation,Apply log/sqrt transformation to reduce skewness,115542845971.80292,No

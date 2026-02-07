@@ -1,0 +1,6 @@
+Feature_1,Feature_2,Correlation,Abs_Correlation,Strength,Multicollinearity_Concern,ML_Recommendation
+Bedroom,Bathroom,0.6303186167096991,0.6303186167096991,Strong,Moderate,Monitor for multicollinearity
+Property Size,price,0.6219538628983978,0.6219538628983978,Strong,None - one feature is target variable,Keep - useful predictor
+Bathroom,Property Size,0.6219473166990857,0.6219473166990857,Strong,Moderate,Monitor for multicollinearity
+Bathroom,price,0.579926295200703,0.579926295200703,Strong,None - one feature is target variable,Keep - useful predictor
+Bedroom,Property Size,0.5080433394430761,0.5080433394430761,Strong,Moderate,Monitor for multicollinearity
