@@ -1,21 +1,7 @@
 # 🏢 Malaysian Condominium Price Predictive Model
-Link: https://piqim.github.io/Malaysian-Condominium-Price-Predictive-Model/
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Dataset](#dataset)
-- [Technologies Used](#technologies-used)
-- [Installation & Setup](#installation--setup)
-- [Usage Guide](#usage-guide)
-- [Project Phases](#project-phases)
-  - [Phase 1: Data Cleaning](#phase-1-data-cleaning)
-  - [Phase 2: Descriptive Analysis](#phase-2-descriptive-analysis)
-  - [Phase 3: Interactive Dashboard](#phase-3-interactive-dashboard)
-- [Future Work](#future-work)
-- [Contributors](#contributors)
-- [License](#license)
+- Main Application: https://piqim.github.io/Malaysian-Condominium-Price-Predictive-Model/
+- Analysis Streamlit Application: https://mycopr2.streamlit.app/
+- Machine Learning Predictive Model Application: **WIP
 
 ---
 
