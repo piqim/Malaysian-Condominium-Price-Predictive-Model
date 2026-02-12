@@ -1,5 +1,5 @@
 """
-Malaysian Condominium Price Predictive Model
+Malaysian Housing Price Predictive Model
 Interactive Streamlit Dashboard - Descriptive Analysis Results
 """
 
@@ -17,7 +17,7 @@ from PIL import Image
 # ============================================================================
 
 st.set_page_config(
-    page_title="Malaysian Condo Price Analysis",
+    page_title="Malaysian Housing Price Analysis",
     page_icon="🏢",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -133,14 +133,14 @@ page = st.sidebar.radio(
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("## ℹ️ About This Dashboard")
-st.sidebar.markdown("This interactive dashboard presents the results of a descriptive analysis of Malaysian condominium prices. Explore key statistics, visualizations, and detailed reports to understand market trends and price drivers.")
+st.sidebar.markdown("This interactive dashboard presents the results of a descriptive analysis of Malaysian housing prices. Explore key statistics, visualizations, and detailed reports to understand market trends and price drivers.")
 
 # ============================================================================
 # PAGE 1: OVERVIEW
 # ============================================================================
 
 if page == "📊 Overview":
-    st.markdown('<h1 class="main-header">🔎 Overview of The Malaysian Condominium Housing Market (MCHM)</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🔎 Overview of The Malaysian Housing Market (MHM)</h1>', unsafe_allow_html=True)
     
     st.markdown("---")
     
@@ -195,9 +195,9 @@ if page == "📊 Overview":
     # Key Insights
     with col1:
         st.markdown("#### 💡 Insight(s)")
-        st.write(f"➡️ **Prices are heavily right-skewed**: Most condos cluster in the lower price range, while a small number go very high.This means the market is dominated by affordable-to-mid-range units, with luxury units forming a long tail ")
+        st.write(f"➡️ **Prices are heavily right-skewed**: Most housing units cluster in the lower price range, while a small number go very high.This means the market is dominated by affordable-to-mid-range units, with luxury units forming a long tail ")
         st.write(f"➡️ **High Kurtosis Value - Many Outliers - Strong Price Inequality in the Market**: This suggests a segmented market (mass-housing vs premium developments).")
-        st.write(f"➡️ **Log Scale of Price Distribution is Roughly Bell-Shaped**: Condo prices grow multiplicatively (location, size, and facilities multiply value)")
+        st.write(f"➡️ **Log Scale of Price Distribution is Roughly Bell-Shaped**: Housing prices grow multiplicatively (location, size, and facilities multiply value)")
 
     # key variables
     with col2:
@@ -244,7 +244,7 @@ if page == "📊 Overview":
 # ============================================================================
 
 elif page == "💰 Price Analysis":
-    st.markdown('<h1 class="main-header">💰 Price Analysis of The MCHM</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">💰 Price Analysis of The MHM</h1>', unsafe_allow_html=True)
     st.markdown("---")
     
     # Detailed Price Statistics
@@ -259,7 +259,7 @@ elif page == "💰 Price Analysis":
     
     # Price Distribution Visualizations
     st.markdown("### 📈 A Look Into Price Distribution")
-    st.write(f"The histogram and box plot indicate that condominium prices in the Malaysian housing market are strongly right-skewed, with most transactions concentrated in a relatively narrow low-to-mid price range and a small number of very high-priced units forming a long upper tail. The mean exceeding the median reflects the disproportionate influence of luxury properties, implying that the average price is not representative of the typical condominium and that the market is segmented into a dominant mass-market segment and a smaller premium segment. Methodologically, this skewness suggests that median-based measures and log-transformed prices are more appropriate for analysis than raw means. Substantively, the pattern implies that increases in average prices may be driven by high-end developments rather than broad-based affordability deterioration.")
+    st.write(f"The histogram and box plot indicate that housing prices in the Malaysian housing market are strongly right-skewed, with most transactions concentrated in a relatively narrow low-to-mid price range and a small number of very high-priced units forming a long upper tail. The mean exceeding the median reflects the disproportionate influence of luxury properties, implying that the average price is not representative of the typical housing unit and that the market is segmented into a dominant mass-market segment and a smaller premium segment. Methodologically, this skewness suggests that median-based measures and log-transformed prices are more appropriate for analysis than raw means. Substantively, the pattern implies that increases in average prices may be driven by high-end developments rather than broad-based affordability deterioration.")
     
     col1, col2 = st.columns(2)
     
@@ -295,7 +295,7 @@ elif page == "💰 Price Analysis":
     st.write("**Overall Interpretation:**")
     st.write("➡️ Structural attributes such as size, bedrooms, and bathrooms show positive relationships with price but do not fully explain its variation.")
     st.write("➡️ Temporal and project-level features reveal a market preference for newer and less dense developments.")
-    st.write("➡️ The combined patterns indicate a segmented condominium market shaped by both physical attributes and broader urban and socioeconomic factors.")
+    st.write("➡️ The combined patterns indicate a segmented housing market shaped by both physical attributes and broader urban and socioeconomic factors.")
 
     if os.path.exists('reports/figures/03_price_vs_numerical.png'):
         image = Image.open('reports/figures/03_price_vs_numerical.png')
@@ -445,7 +445,7 @@ elif page == "📑 Categorical Features":
     st.write("➡️ **Property Type**: Condominiums and apartments show similar price distributions, while serviced apartments tend to be more expensive on average, likely due to their premium amenities and target market.")
     st.write("➡️ **Tenure Type**: Freehold properties generally command higher prices than leasehold ones, reflecting the greater long-term value and security associated with freehold ownership.")
     st.write("➡️ **Location**: Properties located in Kuala Lumpur and Penang exhibit higher price distributions compared to those in Johor Bahru, indicating stronger demand and higher land values in these urban centers.")
-    st.write("Surprisingly, the land title type (Bumi Lot vs Non-Bumi Lot) does not show a significant difference in price distribution, suggesting that other factors such as location and property type may have a stronger influence on price than land title in the Malaysian condominium market.")
+    st.write("Surprisingly, the land title type (Bumi Lot vs Non-Bumi Lot) does not show a significant difference in price distribution, suggesting that other factors such as location and property type may have a stronger influence on price than land title in the Malaysian housing market.")
     
     st.markdown("---")
     
@@ -521,8 +521,8 @@ elif page == "📑 Categorical Features":
 
         st.write("**Insights from Combined Feature Analysis:**")
         st.write("➡️ **Serviced Apartments with Freehold Tenure**: This combination commands the highest median price, indicating a strong market preference for premium properties that offer both high-end amenities and long-term ownership security.")
-        st.write("➡️ **Condominiums with Leasehold Tenure**: This combination has the lowest median price, suggesting that the lack of ownership security and potentially fewer amenities make these properties less desirable in the market.")
-        st.write("➡️ **Overall Trend**: Freehold properties consistently show higher median prices across all property types, reinforcing the importance of tenure security in driving property values. Additionally, serviced apartments tend to be more expensive than condominiums and apartments, regardless of tenure, highlighting the value placed on premium amenities and services in the Malaysian condominium market.")
+        st.write("➡️ **Housing with Leasehold Tenure**: This combination has the lowest median price, suggesting that the lack of ownership security and potentially fewer amenities make these properties less desirable in the market.")
+        st.write("➡️ **Overall Trend**: Freehold properties consistently show higher median prices across all property types, reinforcing the importance of tenure security in driving property values. Additionally, serviced apartments tend to be more expensive than condominiums and apartments, regardless of tenure, highlighting the value placed on premium amenities and services in the Malaysian housing market.")
 
 # ============================================================================
 # PAGE 5: AMENITY & FACILITIES
@@ -535,7 +535,7 @@ elif page == "🏪 Amenity & Facilities":
 
     # Amenity Impact
     st.markdown("### 📊 Amenity Impact on Price")
-    st.write(f"This analysis evaluates how the presence of specific amenities influences condominium prices compared to the overall market median price.")
+    st.write(f"This analysis evaluates how the presence of specific amenities influences housing prices compared to the overall market median price.")
     
     if data['amenities'] is not None and len(data['amenities']) > 0:
         # Display amenity table
@@ -601,7 +601,7 @@ elif page == "🏪 Amenity & Facilities":
     
     if data['facilities_detailed'] is not None:
         st.markdown("#### Detailed Facilities Breakdown")
-        st.write("The table below provides a detailed breakdown of how the number of facilities in a condominium development impacts its price compared to the overall market median. It shows the average price increase associated with each additional facility, as well as the percentage difference from the overall median price.")
+        st.write("The table below provides a detailed breakdown of how the number of facilities in a housing development impacts its price compared to the overall market median. It shows the average price increase associated with each additional facility, as well as the percentage difference from the overall median price.")
         st.dataframe(data['facilities_detailed'], use_container_width=True)
     
     # Facilities visualization
@@ -611,7 +611,7 @@ elif page == "🏪 Amenity & Facilities":
         st.image(image, use_container_width=True)
 
         st.write("**Interpretation of Facilities vs Price Visualization:**")
-        st.write("The visualization illustrates a positive relationship between the number of facilities and condominium prices, indicating that properties with more facilities tend to command higher prices. However, the relationship is not perfectly linear, suggesting that while additional facilities generally add value, the specific types of facilities and their quality may also play a significant role in determining price. The presence of outliers with high prices despite fewer facilities suggests that other factors such as location, property size, and building quality can also significantly influence price, sometimes outweighing the impact of facilities alone.")
+        st.write("The visualization illustrates a positive relationship between the number of facilities and housing prices, indicating that properties with more facilities tend to command higher prices. However, the relationship is not perfectly linear, suggesting that while additional facilities generally add value, the specific types of facilities and their quality may also play a significant role in determining price. The presence of outliers with high prices despite fewer facilities suggests that other factors such as location, property size, and building quality can also significantly influence price, sometimes outweighing the impact of facilities alone.")
 
 # ============================================================================
 # PAGE 6: FULL REPORTS
@@ -664,7 +664,7 @@ elif page == "📋 Full Reports":
     else:
         st.warning(f"Report not available: {selected_report}")
 
-    st.write("**Note:** The reports available for download are generated from the analysis and may contain detailed statistics, interpretations, and insights that can be used for further research, presentations, or decision-making related to the Malaysian condominium housing market.")
+    st.write("**Note:** The reports available for download are generated from the analysis and may contain detailed statistics, interpretations, and insights that can be used for further research, presentations, or decision-making related to the Malaysian housing market.")
     
 
 # ============================================================================
