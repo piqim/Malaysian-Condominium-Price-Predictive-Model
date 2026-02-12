@@ -1,5 +1,5 @@
-# 🏢 Malaysian Condominium Price Predictive Model
-- Main Application: https://piqim.github.io/Malaysian-Condominium-Price-Predictive-Model/
+# 🏢 Malaysian Housing Price Predictive Model
+- Main Application: https://piqim.github.io/Malaysian-Housing-Price-Predictive-Model/
 - Analysis Streamlit Application: https://mycopr2.streamlit.app/
 - Machine Learning Predictive Model Application: **WIP
 
@@ -7,7 +7,7 @@
 
 ## 🎯 Overview
 
-This project analyzes **4,000+ Malaysian condominium listings** to uncover pricing patterns, feature relationships, and market insights. The analysis pipeline includes data cleaning, comprehensive statistical analysis, and an interactive Streamlit dashboard for data exploration.
+This project analyzes **4,000+ Malaysian housing listings** to uncover pricing patterns, feature relationships, and market insights. The analysis pipeline includes data cleaning, comprehensive statistical analysis, and an interactive Streamlit dashboard for data exploration.
 
 ### Key Objectives:
 - Clean and standardize raw property data
@@ -22,7 +22,7 @@ This project analyzes **4,000+ Malaysian condominium listings** to uncover prici
 ## 📊 Dataset
 
 ### Source
-The dataset used in this project contains Malaysian condominium listings scraped from property portals. => Dataset: https://www.kaggle.com/datasets/mcpenguin/raw-malaysian-housing-prices-data/data
+The dataset used in this project contains Malaysian housing listings scraped from property portals. => Dataset: https://www.kaggle.com/datasets/mcpenguin/raw-malaysian-housing-prices-data/data
 
 **Data Credit**: Original dataset mined and compiled from Malaysian real estate platforms. We acknowledge and thank the original data collectors for making this analysis possible.
 
