@@ -1,0 +1,154 @@
+{
+  "target": "price",
+  "transform": "log1p",
+  "best_model": "lightgbm",
+  "train_rows": 1385,
+  "valid_rows": 297,
+  "test_rows": 297,
+  "feature_columns": [
+    "Bedroom",
+    "Bathroom",
+    "Property Size",
+    "Tenure Type",
+    "Completion Year",
+    "# of Floors",
+    "Total Units",
+    "Property Type",
+    "Parking Lot",
+    "Floor Range",
+    "Land Title",
+    "Firm Type",
+    "num_facilities"
+  ],
+  "dropped_constant_columns": [
+    "Nearby School",
+    "Category",
+    "Mall",
+    "Park",
+    "Hospital",
+    "Highway",
+    "Nearby Railway Station"
+  ],
+  "numeric_features": [
+    "Bedroom",
+    "Bathroom",
+    "Property Size",
+    "Completion Year",
+    "# of Floors",
+    "Total Units",
+    "Parking Lot",
+    "num_facilities"
+  ],
+  "categorical_features": [
+    "Tenure Type",
+    "Property Type",
+    "Floor Range",
+    "Land Title",
+    "Firm Type"
+  ],
+  "excluded_columns": [
+    "Address",
+    "Building Name",
+    "Bus Stop",
+    "Developer",
+    "Facilities",
+    "Nearby Mall",
+    "Railway Station",
+    "School",
+    "price"
+  ],
+  "defaults": {
+    "Bedroom": 3.0,
+    "Bathroom": 2.0,
+    "Property Size": 979.5,
+    "Tenure Type": "Freehold",
+    "Completion Year": 2014.0,
+    "# of Floors": 22.0,
+    "Total Units": 480.0,
+    "Property Type": "Condominium",
+    "Parking Lot": 2.0,
+    "Floor Range": "Medium",
+    "Land Title": "Non Bumi Lot",
+    "Firm Type": "E",
+    "num_facilities": 8.0
+  },
+  "numeric_ranges": {
+    "Bedroom": {
+      "min": 1.0,
+      "max": 10.0
+    },
+    "Bathroom": {
+      "min": 1.0,
+      "max": 7.0
+    },
+    "Property Size": {
+      "min": 388.0,
+      "max": 14500.0
+    },
+    "Completion Year": {
+      "min": 1985.0,
+      "max": 2026.0
+    },
+    "# of Floors": {
+      "min": 2.0,
+      "max": 504.0
+    },
+    "Total Units": {
+      "min": 1.0,
+      "max": 4225.0
+    },
+    "Parking Lot": {
+      "min": 1.0,
+      "max": 5.0
+    },
+    "num_facilities": {
+      "min": 1.0,
+      "max": 14.0
+    }
+  },
+  "categorical_values": {
+    "Tenure Type": [
+      "Freehold",
+      "Leasehold"
+    ],
+    "Property Type": [
+      "Condominium",
+      "Apartment",
+      "Service Residence",
+      "Flat",
+      "Studio",
+      "Others",
+      "Townhouse Condo",
+      "Duplex"
+    ],
+    "Floor Range": [
+      "Medium",
+      "-",
+      "High",
+      "Low"
+    ],
+    "Land Title": [
+      "Non Bumi Lot",
+      "Bumi Lot",
+      "Malay Reserved"
+    ],
+    "Firm Type": [
+      "E",
+      "-",
+      "VE",
+      "VEPM",
+      "AE",
+      "V",
+      "PM"
+    ]
+  },
+  "validation_metrics": {
+    "rmse": 174995.8354523282
+  },
+  "test_metrics": {
+    "rmse": 153078.76030682173,
+    "mae": 80651.5373224782,
+    "r2": 0.731975402697191,
+    "median_abs_error": 45003.725008805515
+  }
+}
